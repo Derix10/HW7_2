@@ -56,6 +56,8 @@
 
             <com.google.android.material.button.MaterialButton
                 style="@style/Grey.Button"
+                android:id="@+id/procents"
+                android:onClick="OnOperationClick"
                 android:layout_marginEnd="@dimen/pageMargin"
                 android:text="@string/procents" />
 
@@ -187,6 +189,8 @@
                 style="@style/Gray.Dark.Button"
                 android:layout_width="178sp"
                 android:paddingStart="@dimen/page"
+                android:onClick="OnNumberClick"
+                android:id="@+id/nol"
                 android:text="@string/_0"
                 android:textAlignment="textStart" />
 

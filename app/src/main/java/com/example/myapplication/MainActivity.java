@@ -23,7 +23,15 @@ public class MainActivity extends AppCompatActivity {
     @SuppressLint("NonConstantResourceId")
     public void OnNumberClick(View view) {
         switch (view.getId()) {
-
+            case R.id.nol: //0
+                if (textview.getText().toString().equals("0")) {
+                    textview.setText("0");
+                } else if (isOperationClick) {
+                    textview.setText("0");
+                } else if(!textview.getText().toString().equals("0")){
+                    textview.append("0");
+                }
+                break;
             case R.id.nine: //9
                 if (textview.getText().toString().equals("0")) {
                     textview.setText("9");
@@ -126,6 +134,10 @@ public class MainActivity extends AppCompatActivity {
     @SuppressLint("NonConstantResourceId")
     public void OnOperationClick(View view) {
         switch (view.getId()) {
+            case R.id.procents: // :
+                first = Integer.valueOf(textview.getText().toString());
+                operation = "%";
+                break;
             case R.id.delenie: // :
                 first = Integer.valueOf(textview.getText().toString());
                 operation = "/";
@@ -149,16 +161,19 @@ public class MainActivity extends AppCompatActivity {
             case R.id.egual:// =
                 second = Integer.valueOf(textview.getText().toString());
                 Integer result = null;
-                if (operation == "/") {
+                if (operation.equals("%")) {
+                    result = first % second;
+                }
+                if (operation.equals("/")) {
                     result = first / second;
                 }
-                if (operation == "x") {
+                if (operation.equals("x")) {
                     result = first * second;
                 }
-                if (operation == "+") {
+                if (operation.equals("+")) {
                     result = first + second;
                 }
-                if (operation == "-") {
+                if (operation.equals("-")) {
                     result = first - second;
                 }
                 textview.setText(result.toString());
