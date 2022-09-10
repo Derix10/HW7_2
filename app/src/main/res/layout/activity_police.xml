@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    android:background="@color/ooo"
     tools:context=".PoliceActivity">
 
     <androidx.cardview.widget.CardView
@@ -27,11 +27,11 @@
         android:id="@+id/policies"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="160dp"
-        android:layout_marginTop="120dp"
-        android:text="Policies"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="100dp"
+        android:text="@string/policies"
         android:textColor="@color/black"
-        android:textSize="30dp"
+        android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -49,7 +49,7 @@
             style="@style/police"
             android:layout_marginHorizontal="20dp"
             android:layout_marginTop="30dp"
-            android:text="Policy"
+            android:text="@string/policy"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/policies" />
 
@@ -58,7 +58,7 @@
             style="@style/police"
             android:layout_marginHorizontal="20dp"
             android:layout_marginTop="5dp"
-            android:text="Product Category"
+            android:text="@string/product_category"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/policy" />
 
@@ -67,7 +67,7 @@
             style="@style/police"
             android:layout_marginHorizontal="20dp"
             android:layout_marginTop="5dp"
-            android:text="Origin Country"
+            android:text="@string/origin_country"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/category" />
 
@@ -76,7 +76,7 @@
             style="@style/police"
             android:layout_marginHorizontal="20dp"
             android:layout_marginTop="5dp"
-            android:text="Brand"
+            android:text="@string/brand"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/country" />
     </LinearLayout>
@@ -85,8 +85,8 @@
         android:id="@+id/current"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
-        android:text="Current Policies"
+        android:layout_marginTop="60dp"
+        android:text="@string/current_policies"
         android:textColor="@color/black"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -100,10 +100,10 @@
         android:layout_width="wrap_content"
         android:layout_height="60dp"
         android:layout_marginStart="110dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:backgroundTint="@color/red"
         android:paddingHorizontal="30dp"
-        android:text="Export an CSV"
+        android:text="@string/export_an_csv"
         app:cornerRadius="13dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/current" />

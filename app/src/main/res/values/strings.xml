@@ -20,4 +20,12 @@
     <string name="tochka">.</string>
     <string name="egual">=</string>
     <string name="_00">0</string>
+    <string name="result">result</string>
+    <string name="policies">Policies</string>
+    <string name="policy">Policy</string>
+    <string name="product_category">Product Category</string>
+    <string name="origin_country">Origin Country</string>
+    <string name="brand">Brand</string>
+    <string name="current_policies">Current Policies</string>
+    <string name="export_an_csv">Export an CSV</string>
 </resources>

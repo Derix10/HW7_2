@@ -14,14 +14,15 @@
         app:layout_constraintBottom_toTopOf="@id/conteiner"
         app:layout_constraintTop_toTopOf="parent">
 
-        <Button
+        <com.google.android.material.button.MaterialButton
+            app:cornerRadius="10dp"
             android:id="@+id/buttonn"
-            android:text="result"
+            android:text="@string/result"
             android:visibility="invisible"
             android:layout_marginTop="10dp"
             android:layout_gravity="center|top"
-            android:backgroundTint="@color/purple_500"
-            android:layout_width="wrap_content"
+            android:backgroundTint="@color/orange"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"/>
 
         <TextView
